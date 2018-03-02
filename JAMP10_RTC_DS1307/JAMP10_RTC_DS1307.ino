@@ -34,7 +34,7 @@ int ttahun;
 void ScanDMD()
 {
   dmd.scanDisplayBySPI();
-  dmd.setBrightness(255);
+  //dmd.setBrightness(255);
 }
 
 
