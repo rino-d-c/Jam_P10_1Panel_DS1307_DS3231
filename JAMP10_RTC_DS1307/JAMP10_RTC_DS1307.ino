@@ -1,6 +1,5 @@
 // Jam digital P10 DS1302 by Rino DC @micropwr
 #include <Wire.h>
-#include "DS1302.h"
 #include <SPI.h>
 #include <DMD.h>
 #include <TimerOne.h>
@@ -56,7 +55,6 @@ void setup(void)
 
 void loop(void)
 {
-  //Serial.println(mode);
   DateTime now = rtc.now();
   tjam = now.hour();
   tmenit = now.minute();
