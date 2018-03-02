@@ -1,7 +1,6 @@
 // Jam digital P10 DS1302 by Rino DC @micropwr
 #include <Wire.h>
 #include "DS1302.h"
-#include "Sodaq_DS3231.h"
 #include <SPI.h>
 #include <DMD.h>
 #include <TimerOne.h>
@@ -40,7 +39,7 @@ void ScanDMD()
 
 void setup(void)
 {
-  Serial.begin(115200);
+  //Serial.begin(115200);
   Wire.begin();
   rtc.begin();
   pinMode(SETTING, INPUT_PULLUP);
