@@ -57,7 +57,6 @@ void modeSetJam()
 
 void modeSetHari()
 {
-  Serial.println(thari);
   stringBuff = shari[thari];
   char hari[9];
   stringBuff.toCharArray(hari, 9);
